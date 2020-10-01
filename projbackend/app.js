@@ -28,6 +28,7 @@ app.use(bodyParser.json());
 app.use(cookieParser());
 app.use(cors());
 
+// avoid this line just a random comment
 
 //My Routes
 app.use("/api", authRoutes);
@@ -38,7 +39,8 @@ app.use("/api", orderRoutes);
 
 //PORT
 const port = process.env.PORT || 8000 ;
-    
+
+const abc = console.log ("abc");
 
 app.listen(port,() => {
     console.log(`app is running at ${port}`);
